@@ -38,7 +38,7 @@ public class StudentTest {
         }
         return qtdAlunos;
     }
-    
+
     public void createStudents(Scanner scanner, int studentAmount) {
 
         int counter = 0;
@@ -64,6 +64,20 @@ public class StudentTest {
             }
             studentList.add(new Students(name, qtdSolved));
             counter++;
+        }
+    }
+    
+    public void sortStudentsByQtdSolved(List<Students> studentList) {
+        ArrayList<String> names = new ArrayList<>();
+        for (Students student : studentList) {
+            if (studentByAmountSolved.containsKey(student.getQtdSolved())) {
+                names = studentByAmountSolved.get(student.getQtdSolved());
+                names.add(student.getName());
+            } else {
+                studentByAmountSolved.put(student.getQtdSolved(), new ArrayList<>());
+                names = studentByAmountSolved.get(student.getQtdSolved());
+                names.add(student.getName());
+            }
         }
     }
 }
