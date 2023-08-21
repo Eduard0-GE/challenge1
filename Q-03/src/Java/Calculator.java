@@ -55,4 +55,18 @@ public class Calculator {
         }
         System.out.printf("%d\n",result);
     }
+
+    public void mainLoop(){
+        int operand = 999;
+        while(operand != 0){
+            System.out.println("Enter operand amount (0 to exit)");
+            operand = operandAmt();
+            if (operand > 0){
+                String operation = createOperation(operand);
+                operationResult(operation, operand);
+            }else{
+                System.out.println("Program finished!");
+            }            
+        }
+    }
 }
