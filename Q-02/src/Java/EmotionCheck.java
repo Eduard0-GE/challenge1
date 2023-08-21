@@ -49,4 +49,17 @@ public class EmotionCheck {
         }
         return count;
     }
+
+    public String returnEmotion() {
+        int result = this.getFun() - this.getUpset();
+        String emotion = "";
+        if (result > 0) {
+            emotion = "fun";
+        } else if (result < 0) {
+            emotion = "upset";
+        } else {
+            emotion = "neutral";
+        }
+        return emotion;
+    }
 }
