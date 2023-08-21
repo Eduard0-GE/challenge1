@@ -1,0 +1,18 @@
+{
+    "name": null,
+    "age": null,
+    "phone": null,
+    "height": null,
+    "email": null,
+    "cpf": null,
+    "birthday": null,
+    "address": {
+        "zip": null,
+        "street": null,
+        "neighborhood": null,
+        "complement": null,
+        "city": null,
+        "state": null,
+        "country": null
+    }
+}
