@@ -1,14 +1,14 @@
 # Compass Uol Challenge 1
-### In this first challenge, I was tasked with completing 5 projects using the technologies that I learned during the first month. The projects are: a Java program that gets the student with the least amount of tasks completed, a program that checks the emotion of a text based on the amount and type of emoticons in it, a calculator program that returns the result of an operation in String format, creating SQL tables, and in the last project, creating a NoSQL document 
+##### In this first challenge, I was tasked with completing 5 projects using the technologies that I learned during the first month. The projects are: a Java program that gets the student with the least amount of tasks completed, a program that checks the emotion of a text based on the amount and type of emoticons in it, a calculator program that returns the result of an operation in String format, creating SQL tables, and in the last project, creating a NoSQL document 
 
 ### Q-01 Sorting students:
 The objective of this project is to create a program that will sort students by the least amount of tasks completed. In case of a tie, students with the same grade will be sorted alphabetically. The student at the top of the descending list will lose the contest. In this program, I created a StudentTest class that has the methods to achieve this objective. During the program, I will create instances of students, put them in an ArrayList, use their values to create a HashMap with the amount of tasks as the key and a list of names as the values, loop through the HashMap, and get the student after sorting the list.
 
 ### Q-02 Checking emotions:
-The objective of this project is to create a program that will determine an emotion based on the number of emoticons in an input text. The program will loop through the text and count the number of instances of the emoticons ':-)' and ':-('. After the calculation, the program will print the emotion based on the calculated value.
+The objective of this project is to create a program that will determine an emotion based on the number of emoticons in an input text. The program will loop through the text and count the number of instances of the emoticons ':-)' and ':-(' .The program then will make a calculation of the number of each instance ( :-) = +1 | :-( = -1 ).The return value will be based on the result number of the calculation (emo > 0 = 'fun' | emo < 0 = 'upset' | emo == 0 = 'neutral'). After geting the emotion the program will print the it on the terminal.
 
 ### Q-03: Calculating strings
-The objective of this project is to create a program that will calculate the result of a string operation. The program will first ask for the number of operands in the equation. After obtaining the operand count, the program will ask for the operation in string format. Then, the operands and operators will be separated into different lists. Finally, the program will use these values to print the calculation result."
+The objective of this project is to create a program that will calculate the result of a string operation. The program will first ask for the number of operands in the equation. After obtaining the operand count, the program will ask for the operation in string format. Then, the operands and operators will be separated into different lists. Finally, the program will loop through these values to obtain and print the calculation result."
 
 
 ### Q-04: Creating SQL tables
