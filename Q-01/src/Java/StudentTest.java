@@ -66,7 +66,7 @@ public class StudentTest {
             counter++;
         }
     }
-    
+
     public void sortStudentsByQtdSolved(List<Students> studentList) {
         ArrayList<String> names = new ArrayList<>();
         for (Students student : studentList) {
@@ -80,4 +80,26 @@ public class StudentTest {
             }
         }
     }
+
+    public String unluckyStudent() {
+        ArrayList<String> list = new ArrayList<>();
+        String unluckyStudent = "";
+
+        for (int i = 0; i < 11; i++) {
+            if (studentByAmountSolved.containsKey(i)) {
+                list = studentByAmountSolved.get(i);
+                if (list.isEmpty()) {
+                } else {
+                    list = studentByAmountSolved.get(i);
+                    Collections.sort(list, Collections.reverseOrder());
+                    unluckyStudent = list.get(0);
+                    break;
+                }
+            } else {
+                continue;
+            }
+        }
+        return unluckyStudent;
+    }
+
 }
