@@ -102,4 +102,22 @@ public class StudentTest {
         return unluckyStudent;
     }
 
+    public void mainLoop(Scanner scanner) {
+        int count = 1;
+        while (count > 0) {
+            int studentAmount = this.setStudentAmount(scanner);
+            System.out.println(studentAmount);
+            if (studentAmount > 0) {
+                createStudents(scanner, studentAmount);
+                sortStudentsByQtdSolved(this.getStudentList());
+                String text = unluckyStudent();
+                System.out.println("Instance " + count);
+                System.out.printf("%s\n\n",text);
+            } else {
+                System.out.println("Exiting program!");
+                break;
+            }
+            count++;
+        }
+    }
 }
