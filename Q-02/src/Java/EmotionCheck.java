@@ -38,4 +38,15 @@ public class EmotionCheck {
         }
         return text;
     }
+
+    public int emotionAmount(String text, String emotion) {
+        int count = 0;
+        int index = text.indexOf(emotion);
+
+        while (index != -1) {
+            count += 1;
+            index = text.indexOf(emotion, index + emotion.length());
+        }
+        return count;
+    }
 }
